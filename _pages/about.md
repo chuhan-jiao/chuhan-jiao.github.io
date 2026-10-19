@@ -17,9 +17,6 @@ profile:
       <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">World Models & Robot Learning</span>
     </div>
 
-nav: true
-nav_order: 1
-
 selected_papers: false
 social: true
 
@@ -150,7 +147,7 @@ latest_posts:
   }
 </style>
 
-<div style="clear: both; margin: 0.5rem 0 1.5rem; padding: 14px 18px; background: rgba(0, 118, 223, 0.08); border-left: 5px solid var(--global-theme-color, #1d4ed8); border-radius: 6px; color: var(--global-text-color, #1e3a8a); font-size: 1.05rem;">
+<div style="margin: 0.5rem 0 1.5rem; padding: 14px 18px; background: rgba(0, 118, 223, 0.08); border-left: 5px solid var(--global-theme-color, #1d4ed8); border-radius: 6px; color: var(--global-text-color, #1e3a8a); font-size: 1.05rem;">
   <strong>I am on the job market for faculty or research scientist positions. Please feel free to reach out!</strong>
 </div>
 
@@ -159,6 +156,8 @@ I am a final-year Ph.D. candidate in Computer Science at the [Collaborative Arti
 In summer 2026, I was a Research Intern at the [Toyota Research Institute (TRI)](https://www.tri.global/) in Cambridge, Massachusetts, within the Robotics / Human-Aware Interaction and Learning (HAIL) team, mentored by [Dr. John Gideon](http://www.johngideon.me/), [Dr. Anshul Gupta](https://anshul-gupta24.github.io/), and [Dr. Guy Rosman](https://www.tri.global/about-us/dr-guy-rosman), where I worked on egocentric video generation. In autumn 2024, I was a Visiting Doctoral Researcher at [ETH Zürich](https://ethz.ch/en.html) in the [GeoGaze Lab](https://geogaze.ethz.ch/), hosted by [Dr. Peter Kiefer](https://pekiefer.ethz.ch/).
 
 Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science from [Aalto University](https://www.aalto.fi/en), advised by [Prof. Antti Oulasvirta](https://users.aalto.fi/~oulasvir/), and my B.Eng. degree in Computer Science and Technology from [Donghua University](https://english.dhu.edu.cn/).
+
+<div style="clear: both;"></div>
 
 ### Research Overview
 
