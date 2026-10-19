@@ -1,115 +1,115 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
+@article{jiao2025hagi++,
+  abbr        = {TVCG},
   bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+  title       = {HAGI++: Head-Assisted Gaze Imputation and Generation},
+  author      = {Jiao, Chuhan and Hu, Zhiming and Bulling, Andreas},
+  journal     = {IEEE Transactions on Visualization and Computer Graphics (TVCG)},
+  year        = {2026},
+  doi         = {10.1109/TVCG.2026.3738876},
+  pdf         = {https://www.collaborative-ai.org/publications/jiao26_tvcg.pdf},
+  code        = {https://git.hcics.simtech.uni-stuttgart.de/public-projects/HAGI},
+  preview     = {jiao26_tvcg.png},
+  selected    = {true},
+  abstract    = {Mobile eye-tracking is crucial for capturing human visual attention in real-world and XR settings, supporting research and human-computer interaction. Yet blinks, pupil-detection errors and lighting changes create missing values that hinder gaze analysis. We present HAGI++, a multi-modal diffusion-based imputation method that, for the first time, leverages integrated head-orientation sensors to exploit the natural correlation between head and eye movements. Using a transformer-based diffusion model, it learns cross-modal dependencies between eye and head data and can additionally incorporate wrist/hand motion when such wearable signals are available. Evaluations on the large-scale Nymeria, Ego-Exo4D and HOT3D datasets show that HAGI++ consistently outperforms traditional interpolation and deep-learning time-series imputation baselines. Statistical analysis confirms that its gaze-velocity distributions closely match real human behaviour, yielding realistic imputations. Even when 100% of gaze data are missing (pure gaze generation), HAGI++ exceeds methods that rely on the visual inputs and the methods rely on full-body motion capture by incorporating wrist motion from commercial wearables. Our approach enables more complete, accurate eye-gaze recordings in real-world contexts, enhancing gaze-based analysis and interaction across many applications.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
+@article{jiao2026diffgaze,
+  abbr        = {TiiS},
   bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+  title       = {DiffGaze: A Diffusion Model for Modelling Fine-grained Human Gaze Behaviour on 360° Images},
+  author      = {Jiao, Chuhan and Wang, Yao and Zhang, Guanhua and B{\^a}ce, Mihai and Hu, Zhiming and Bulling, Andreas},
+  journal     = {ACM Transactions on Interactive Intelligent Systems},
+  year        = {2026},
+  pages       = {1--13},
+  doi         = {10.1145/3772075},
+  html        = {https://dl.acm.org/doi/abs/10.1145/3772075},
+  pdf         = {https://www.collaborative-ai.org/publications/jiao25_tiis.pdf},
+  preview     = {jiao25_tiis.png},
+  selected    = {true},
+  abstract    = {Modelling human gaze behaviour on 360° images is important for various human-computer interaction applications. However, existing methods are limited to predicting discrete fixation sequences or aggregated saliency maps, thereby neglecting fine-grained gaze behaviour such as saccadic eye movements that can be captured by commercial eye-trackers. We introduce a more challenging task: fine-grained gaze sequence generation. This task aims to generate eye-tracker-like gaze data for given stimuli. We propose DiffGaze, a diffusion-based method for generating realistic and diverse fine-grained human gaze sequences conditioned on 360° images. We evaluate DiffGaze on two 360° image benchmarks for fine-grained gaze sequence generation as well as two downstream tasks, scanpath prediction and saliency prediction. Our evaluations show that DiffGaze outperforms the fine-grained gaze generation baselines in all tasks on both benchmarks. We also report a 21-participant survey study showing that our method generates gaze sequences that are indistinguishable from real human sequences. Taken together, our evaluations not only demonstrate the effectiveness of DiffGaze but also point towards a new generation of methods that faithfully model the rich spatial and temporal nature of natural human gaze behaviour.}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
+@inproceedings{jiao2026diffeyesyn,
+  abbr        = {FG},
   bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
+  title       = {DiffEyeSyn: User-specific Subtle Eye Movement Synthesis Using Diffusion Models},
+  author      = {Jiao, Chuhan and Zhang, Guanhua and Cho, Yeonjoo and Hu, Zhiming and Bulling, Andreas},
+  booktitle   = {Proc. IEEE International Conference on Automatic Face and Gesture Recognition (FG)},
+  year        = {2026},
+  doi         = {10.1109/FG67764.2026.11556992},
+  html        = {https://ieeexplore.ieee.org/document/11556992/},
+  pdf         = {https://www.collaborative-ai.org/publications/jiao26_fg.pdf},
+  preview     = {jiao26_fg.png},
+  selected    = {true},
+  abstract    = {Simulating realistic human eye movements is important in computer graphics and human-computer interaction. Prior work has mainly focused on low-frequency gaze data or predicting scanpaths from visual stimuli, often overlooking the subtle movements that reflect natural eye behaviour. These subtle dynamics are known containing rich information of an individual. We present DiffEyeSyn, the first computational method for synthesising realistic eye movements that capture these fine-grained details. Our key idea is to model subtle variations in gaze data as a user-specific noise that can be injected into any given sequence. We formulate this injection task as a conditional diffusion process in which the synthesis is conditioned on user-specific embeddings extracted from the gaze data using pre-trained models for user authentication. We propose user identity guidance, a novel loss function that allows the model to produce movements that remain both realistic and consistent with individual characteristics. Experiments on two public datasets show that DiffEyeSyn produces eye movements that are more realistic than baseline methods in terms of velocity distribution and preserving user-specific information. Furthermore, we demonstrate that DiffEyeSyn can synthesise large-scale gaze data and support various downstream tasks, such as gaze-based user identification. As such, our work can serve as a post-processing method for existing scanpath prediction approaches and provides a foundation for applications such as character animation and eye movement biometrics.}
 }
 
-@book{przibram1967letters,
+@inproceedings{jiao2025hagi,
+  abbr        = {UIST},
   bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+  title       = {HAGI: Head-Assisted Gaze Imputation for Mobile Eye Trackers},
+  author      = {Jiao, Chuhan and Hu, Zhiming and Bulling, Andreas},
+  booktitle   = {Proc. ACM Symposium on User Interface Software and Technology (UIST)},
+  year        = {2025},
+  pages       = {1--14},
+  doi         = {10.1145/3746059.3747749},
+  html        = {https://dl.acm.org/doi/full/10.1145/3746059.3747749},
+  pdf         = {https://www.collaborative-ai.org/publications/jiao25_uist.pdf},
+  code        = {https://git.hcics.simtech.uni-stuttgart.de/public-projects/HAGI},
+  preview     = {jiao25_uist.png},
+  selected    = {true},
+  abstract    = {Mobile eye tracking plays a vital role in capturing human visual attention across both real-world and extended reality (XR) environments, making it an essential tool for applications ranging from behavioural research to human-computer interaction. However, missing values due to blinks, pupil detection errors, or illumination changes pose significant challenges for further gaze data analysis. To address this challenge, we introduce HAGI, a multi-modal diffusion-based approach for gaze data imputation that, for the first time, uses the integrated head orientation sensors to exploit the inherent correlation between head and eye movements. Our method includes a head-movement feature extraction module alongside a novel hybrid feature fusion mechanism that effectively integrates gaze and head motion features at multiple levels. Additionally, we introduce a tailored loss function to enhance gaze imputation accuracy further. Extensive evaluations on the large-scale Nymeria, Ego-Exo4D, and HOT3D datasets demonstrate that HAGI consistently outperforms conventional interpolation methods and deep learning-based time-series imputation baselines, reducing mean angular error by up to 22%. Furthermore, statistical analyses confirm that HAGI produces gaze velocity distributions that more closely match actual human gaze behaviour than baselines, ensuring more realistic gaze imputations. Our method paves the way for more complete and accurate eye gaze recordings in real-world settings and has significant potential for enhancing gaze-based analysis and interaction across various application domains.}
+}
+
+@inproceedings{jiao2023supreyes,
+  abbr        = {UIST},
+  bibtex_show = {true},
+  title       = {SUPREYES: SUPer Resolution for EYES Using Implicit Neural Representation Learning},
+  author      = {Jiao, Chuhan and Hu, Zhiming and B{\^a}ce, Mihai and Bulling, Andreas},
+  booktitle   = {Proc. ACM Symposium on User Interface Software and Technology (UIST)},
+  year        = {2023},
+  pages       = {1--13},
+  doi         = {10.1145/3586183.3606780},
+  html        = {https://dl.acm.org/doi/abs/10.1145/3586183.3606780},
+  pdf         = {https://www.collaborative-ai.org/publications/jiao23_uist.pdf},
+  preview     = {jiao23_uist.png},
+  selected    = {true},
+  abstract    = {We introduce SUPREYES, a novel self-supervised method to increase the spatio-temporal resolution of gaze data recorded using low(er)-resolution eye trackers. Despite continuing advances in eye tracking technology, the vast majority of current eye trackers, particularly mobile ones and those integrated into mobile devices, suffer from low-resolution gaze data, thus fundamentally limiting their practical usefulness. SUPREYES learns a continuous implicit neural representation from low-resolution gaze data to up-sample the gaze data to arbitrary resolutions. We compare our method with commonly used interpolation methods on arbitrary scale super-resolution and demonstrate that SUPREYES outperforms these baselines by a significant margin. We also test on the sample downstream task of gaze-based user identification and show that our method improves the performance of original low-resolution gaze data and outperforms other baselines. These results are promising as they open up a new direction for increasing eye tracking fidelity as well as enabling new gaze-based applications without the need for new eye tracking equipment.}
+}
+
+@inproceedings{wang2026isthisit,
+  abbr        = {ETRA},
+  bibtex_show = {true},
+  title       = {Is this it? Benchmarking Scanpath Metrics for Information Display},
+  author      = {Wang, Yao and Nagasawa, Junichi and Shi, Danqing and Jiao, Chuhan and Jiang, Yue and Bulling, Andreas},
+  booktitle   = {Proc. ACM Symposium on Eye Tracking Research \& Applications (ETRA)},
+  year        = {2026},
+  doi         = {10.1145/3797246.3805691},
+  html        = {https://dl.acm.org/doi/full/10.1145/3797246.3805691},
+  pdf         = {https://www.collaborative-ai.org/publications/wang26_metr.pdf},
+  preview     = {wang26_metr.png},
+  selected    = {false},
+  abstract    = {Scanpath prediction is a fundamental task in human visual attention research, aiming to simulate user viewing behaviour for given stimuli. While scanpath prediction methods have matured in natural scenes, recent research has expanded to information displays, such as graphical user interfaces and data visualisations. However, there is currently no consensus on which scanpath metrics to use for evaluation, raising concerns regarding the validity and comparability of the proposed methods. This paper benchmarks ten commonly used scanpath metrics across the MASSVIS and UEyes datasets by comparing model predictions with empirical gaze data. We evaluate these metrics with subjective expert ratings of scanpath similarity. Our analysis reveals that vector-based and region-based metrics align more closely with expert ratings than pixel-based and recurrence-based metrics. Based on these findings, we provide best practices for evaluating visual scanpaths in information displays, emphasising the urgent need for appropriate metrics to ensure the validity of future research.}
+}
+
+@article{wang2022visrecall,
+  abbr        = {TVCG},
+  bibtex_show = {true},
+  title       = {VisRecall: Quantifying Information Visualisation Recallability via Question Answering},
+  author      = {Wang, Yao and Jiao, Chuhan and B{\^a}ce, Mihai and Bulling, Andreas},
+  journal     = {IEEE Transactions on Visualization and Computer Graphics},
+  volume      = {28},
+  number      = {12},
+  pages       = {4995--5005},
+  year        = {2022},
+  doi         = {10.1109/TVCG.2022.3198163},
+  html        = {https://doi.org/10.1109/TVCG.2022.3198163},
+  pdf         = {https://www.collaborative-ai.org/publications/wang22_tvcg.pdf},
+  supp        = {https://www.collaborative-ai.org/publications/wang22_tvcg_sup.pdf},
+  preview     = {wang22_tvcg.png},
+  selected    = {false},
+  abstract    = {Despite its importance for assessing the effectiveness of communicating information visually, fine-grained recallability of information visualisations has not been studied quantitatively so far. In this work, we propose a question-answering paradigm to study visualisation recallability and present VisRecall, a novel dataset consisting of 200 visualisations that are annotated with crowd-sourced human (N = 305) recallability scores obtained from 1,000 questions of five question types. Furthermore, we present the first computational method to predict recallability of different visualisation elements, such as the title or specific data values. We report detailed analyses of our method on VisRecall and demonstrate that it outperforms several baselines in overall recallability and FE-, F-, RV-, and U-question recallability. Our work makes fundamental contributions towards a new generation of methods to assist designers in optimising visualisations.}
 }
