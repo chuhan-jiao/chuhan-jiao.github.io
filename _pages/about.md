@@ -20,7 +20,7 @@ profile:
 nav: true
 nav_order: 1
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
@@ -29,6 +29,126 @@ announcements:
 latest_posts:
   enabled: false
 ---
+
+<style>
+  .research-overview-card {
+    background: var(--global-code-bg-color, var(--card-bg, #f8f9fa));
+    border: 1px solid var(--global-divider-color, #e1e4e8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .flow-root-node {
+    background: var(--global-card-bg-color, #ffffff);
+    border: 2px solid var(--global-theme-color, #0076df);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .flow-down-indicator {
+    position: relative;
+    height: 36px;
+    margin: 0 auto;
+  }
+  .flow-down-indicator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 18px;
+    background-color: var(--global-theme-color, #0076df);
+  }
+  .flow-down-indicator::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16.66%;
+    right: 16.66%;
+    height: 2px;
+    background-color: var(--global-theme-color, #0076df);
+  }
+  .flow-pillar-col {
+    position: relative;
+  }
+  .flow-pillar-col::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 18px;
+    background-color: var(--global-theme-color, #0076df);
+  }
+  .flow-pillar-col::after {
+    content: "▼";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    color: var(--global-theme-color, #0076df);
+    line-height: 1;
+  }
+  @media (max-width: 767.98px) {
+    .flow-down-indicator::after,
+    .flow-pillar-col::before,
+    .flow-pillar-col::after {
+      display: none;
+    }
+  }
+  .flow-pillar-card {
+    background: var(--global-card-bg-color, #ffffff);
+    border: 1px solid var(--global-divider-color, #e1e4e8);
+    border-radius: 10px;
+    padding: 1.15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .flow-pillar-title {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: var(--global-text-color, inherit);
+    margin-bottom: 0.2rem;
+  }
+  .flow-pillar-subtitle {
+    font-size: 0.82rem;
+    color: var(--global-theme-color, #0076df);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .flow-pillar-desc {
+    font-size: 0.82rem;
+    color: var(--global-text-color-light, #6c757d);
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+    flex-grow: 1;
+  }
+  .flow-pillar-links {
+    font-size: 0.78rem;
+    margin-top: auto;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--global-divider-color, #e1e4e8);
+  }
+  .flow-pillar-links a, .flow-pillar-links .tag {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 2px 7px;
+    background: var(--global-card-bg-color, #ffffff);
+    border: 1px solid var(--global-divider-color, #e1e4e8);
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .flow-pillar-links .tag {
+    color: var(--global-text-color-light, #6c757d);
+  }
+</style>
 
 <div style="clear: both; margin: 0.5rem 0 1.5rem; padding: 14px 18px; background: rgba(0, 118, 223, 0.08); border-left: 5px solid var(--global-theme-color, #1d4ed8); border-radius: 6px; color: var(--global-text-color, #1e3a8a); font-size: 1.05rem;">
   <strong>I am on the job market for faculty or research scientist positions. Please feel free to reach out!</strong>
@@ -44,34 +164,63 @@ Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science
 
 My research focuses on **human behaviour modelling**, **egocentric computer vision**, and **robot learning**, with the overarching goal of transferring human behavioural priors and manipulation skills to robots for natural **human-robot interaction (HRI)** and collaboration. Moving from modelling *where* people look and *how* they coordinate their movements to generating *what* people see across multiple perspectives in shared environments, I aim to equip embodied agents with the visual and behavioural understanding needed to work alongside humans rather than solely in isolation.
 
-<div class="research-flowchart my-4 p-3 rounded" style="background-color: var(--global-code-bg-color, var(--card-bg, #f8f9fa)); border: 1px solid var(--global-divider-color, #e1e4e8);">
-  <div class="text-center p-3 mb-3 rounded shadow-sm" style="background-color: var(--global-card-bg-color, #ffffff); border: 1px solid var(--global-theme-color, #0076df);">
-    <strong class="fs-5" style="color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Human-Robot Interaction &amp; Physical AI</strong>
-    <p class="small mb-0 mt-1" style="color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising multi-perspective egocentric experiences, and transferring human skills to robots for natural human-robot interaction</p>
+<div class="research-overview-card">
+  <div class="flow-root-node">
+    <div class="fw-bold fs-5 mb-1" style="color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Human-Robot Interaction &amp; Physical AI</div>
+    <div class="small" style="color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising multi-perspective egocentric experiences, and transferring human skills to robots for natural human-robot interaction</div>
   </div>
+  <div class="flow-down-indicator"></div>
   <div class="row g-3">
-    <div class="col-md-4">
-      <div class="h-100 p-3 rounded shadow-sm" style="background-color: var(--global-card-bg-color, #ffffff); border: 1px solid var(--global-divider-color, #e1e4e8); color: var(--global-text-color, inherit);">
-        <h6 class="fw-bold mb-2" style="color: var(--global-text-color, inherit);">1. Gaze &amp; Visual Attention Modelling <span class="fw-normal fst-italic d-block small" style="color: var(--global-text-color-light, #6c757d);">Where We Look</span></h6>
-        <p class="small mb-2" style="color: var(--global-text-color-light, #6c757d);">Continuous spatio-temporal representation and generative synthesis of fine-grained eye movements across user identities and visual stimuli.</p>
-        <div class="small"><strong>Key Works:</strong> <a href="#jiao2023supreyes">SUPREYES (UIST'23)</a> &bull; <a href="#jiao2026diffgaze">DiffGaze (TiiS'26)</a> &bull; <a href="#jiao2026diffeyesyn">DiffEyeSyn (FG'26)</a></div>
+    <div class="col-md-4 flow-pillar-col">
+      <div class="flow-pillar-card">
+        <div class="flow-pillar-title">1. Gaze &amp; Visual Attention Modelling</div>
+        <div class="flow-pillar-subtitle">Where We Look &rarr;</div>
+        <div class="flow-pillar-desc">Continuous spatio-temporal representation and generative synthesis of fine-grained eye movements across user identities and visual stimuli.</div>
+        <div class="flow-pillar-links">
+          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <a href="#jiao2023supreyes">SUPREYES (UIST'23)</a>
+          <a href="#jiao2026diffgaze">DiffGaze (TiiS'26)</a>
+          <a href="#jiao2026diffeyesyn">DiffEyeSyn (FG'26)</a>
+        </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="h-100 p-3 rounded shadow-sm" style="background-color: var(--global-card-bg-color, #ffffff); border: 1px solid var(--global-divider-color, #e1e4e8); color: var(--global-text-color, inherit);">
-        <h6 class="fw-bold mb-2" style="color: var(--global-text-color, inherit);">2. Multimodal Coordination <span class="fw-normal fst-italic d-block small" style="color: var(--global-text-color-light, #6c757d);">How We Move</span></h6>
-        <p class="small mb-2" style="color: var(--global-text-color-light, #6c757d);">Modelling cross-modal coordination between eye gaze, head orientation, wrist/hand motion, and body posture from everyday wearable sensors.</p>
-        <div class="small"><strong>Key Works:</strong> <a href="#jiao2025hagi">HAGI (UIST'25)</a> &bull; <a href="#jiao2025hagi++">HAGI++ (TVCG'26)</a> &bull; [Under Submission]</div>
+    <div class="col-md-4 flow-pillar-col">
+      <div class="flow-pillar-card">
+        <div class="flow-pillar-title">2. Multimodal Coordination</div>
+        <div class="flow-pillar-subtitle">How We Move &rarr;</div>
+        <div class="flow-pillar-desc">Modelling cross-modal coordination between eye gaze, head orientation, wrist/hand motion, and body posture from everyday wearable sensors.</div>
+        <div class="flow-pillar-links">
+          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <a href="#jiao2025hagi">HAGI (UIST'25)</a>
+          <a href="#jiao2025hagi++">HAGI++ (TVCG'26)</a>
+          <span class="tag">[Under Submission]</span>
+        </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="h-100 p-3 rounded shadow-sm" style="background-color: var(--global-card-bg-color, #ffffff); border: 1px solid var(--global-divider-color, #e1e4e8); color: var(--global-text-color, inherit);">
-        <h6 class="fw-bold mb-2" style="color: var(--global-text-color, inherit);">3. World Models &amp; Robot Learning for HRI <span class="fw-normal fst-italic d-block small" style="color: var(--global-text-color-light, #6c757d);">What We See &amp; How We Interact</span></h6>
-        <p class="small mb-2" style="color: var(--global-text-color-light, #6c757d);">Moving beyond single-view perception to multi-perspective egocentric video generation and generative world models, transferring human skills into robot policies (VLA/WAM) for fluent human-robot interaction and collaboration.</p>
-        <div class="small"><strong>Key Works:</strong> [Under Submission]</div>
+    <div class="col-md-4 flow-pillar-col">
+      <div class="flow-pillar-card">
+        <div class="flow-pillar-title">3. World Models &amp; Robot Learning for HRI</div>
+        <div class="flow-pillar-subtitle">What We See &amp; How We Interact</div>
+        <div class="flow-pillar-desc">Moving beyond single-view perception to multi-perspective egocentric video generation and generative world models, transferring human skills into robot policies (VLA/WAM) for fluent human-robot interaction and collaboration.</div>
+        <div class="flow-pillar-links">
+          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <span class="tag">[Under Submission]</span>
+        </div>
       </div>
     </div>
   </div>
+</div>
+
+### Selected Publications
+
+<div class="publications">
+{% bibliography --group_by none --query @*[selected=true]* %}
+</div>
+
+### Other Publications
+
+<div class="publications">
+{% bibliography --group_by none --query @*[selected=false]* %}
 </div>
 
 ### Academic Services
