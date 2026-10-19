@@ -9,12 +9,12 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <div class="my-3 text-center">
-      <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">Egocentric Vision</span>
-      <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">Human Behaviour Modelling</span>
-      <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">Eye Tracking</span>
-      <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">Multimodal Sensing</span>
-      <span class="badge border me-1 mb-1" style="background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border-color: var(--global-divider-color, #e1e4e8) !important;">World Models & Robot Learning</span>
+    <div style="margin: 0.75rem 0; text-align: center;">
+      <span style="display: inline-block; margin: 0 2px 5px; padding: 3px 8px; font-size: 0.76rem; font-weight: 500; border-radius: 5px; background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border: 1px solid var(--global-divider-color, #e1e4e8);">Egocentric Vision</span>
+      <span style="display: inline-block; margin: 0 2px 5px; padding: 3px 8px; font-size: 0.76rem; font-weight: 500; border-radius: 5px; background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border: 1px solid var(--global-divider-color, #e1e4e8);">Human Behaviour Modelling</span>
+      <span style="display: inline-block; margin: 0 2px 5px; padding: 3px 8px; font-size: 0.76rem; font-weight: 500; border-radius: 5px; background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border: 1px solid var(--global-divider-color, #e1e4e8);">Eye Tracking</span>
+      <span style="display: inline-block; margin: 0 2px 5px; padding: 3px 8px; font-size: 0.76rem; font-weight: 500; border-radius: 5px; background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border: 1px solid var(--global-divider-color, #e1e4e8);">Multimodal Sensing</span>
+      <span style="display: inline-block; margin: 0 2px 5px; padding: 3px 8px; font-size: 0.76rem; font-weight: 500; border-radius: 5px; background-color: var(--global-card-bg-color, #ffffff); color: var(--global-text-color, inherit); border: 1px solid var(--global-divider-color, #e1e4e8);">World Models &amp; Robot Learning</span>
     </div>
 
 selected_papers: false
@@ -67,8 +67,14 @@ latest_posts:
     height: 2px;
     background-color: var(--global-theme-color, #0076df);
   }
+  .flow-pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
   .flow-pillar-col {
     position: relative;
+    display: flex;
   }
   .flow-pillar-col::before {
     content: "";
@@ -91,6 +97,9 @@ latest_posts:
     line-height: 1;
   }
   @media (max-width: 767.98px) {
+    .flow-pillars-grid {
+      grid-template-columns: 1fr;
+    }
     .flow-down-indicator::after,
     .flow-pillar-col::before,
     .flow-pillar-col::after {
@@ -102,7 +111,7 @@ latest_posts:
     border: 1px solid var(--global-divider-color, #e1e4e8);
     border-radius: 10px;
     padding: 1.15rem;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -147,7 +156,7 @@ latest_posts:
   }
 </style>
 
-<div style="margin: 0.5rem 0 1.5rem; padding: 14px 18px; background: rgba(0, 118, 223, 0.08); border-left: 5px solid var(--global-theme-color, #1d4ed8); border-radius: 6px; color: var(--global-text-color, #1e3a8a); font-size: 1.05rem;">
+<div style="overflow: hidden; margin: 0.25rem 0 1.25rem; padding: 12px 16px; background: rgba(0, 118, 223, 0.08); border-left: 5px solid var(--global-theme-color, #1d4ed8); border-radius: 6px; color: var(--global-text-color, #1e3a8a); font-size: 1.02rem;">
   <strong>I am on the job market for faculty or research scientist positions. Please feel free to reach out!</strong>
 </div>
 
@@ -165,44 +174,44 @@ My research focuses on **human behaviour modelling**, **egocentric computer visi
 
 <div class="research-overview-card">
   <div class="flow-root-node">
-    <div class="fw-bold fs-5 mb-1" style="color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Human-Robot Interaction &amp; Physical AI</div>
-    <div class="small" style="color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising multi-perspective egocentric experiences, and transferring human skills to robots for natural human-robot interaction</div>
+    <div style="font-weight: 700; font-size: 1.15rem; margin-bottom: 0.25rem; color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Human-Robot Interaction &amp; Physical AI</div>
+    <div style="font-size: 0.88rem; color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising multi-perspective egocentric experiences, and transferring human skills to robots for natural human-robot interaction</div>
   </div>
   <div class="flow-down-indicator"></div>
-  <div class="row g-3">
-    <div class="col-md-4 flow-pillar-col">
+  <div class="flow-pillars-grid">
+    <div class="flow-pillar-col">
       <div class="flow-pillar-card">
         <div class="flow-pillar-title">1. Gaze &amp; Visual Attention Modelling</div>
         <div class="flow-pillar-subtitle">Where We Look &rarr;</div>
         <div class="flow-pillar-desc">Continuous spatio-temporal representation and generative synthesis of fine-grained eye movements across user identities and visual stimuli.</div>
         <div class="flow-pillar-links">
-          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <div style="margin-bottom: 0.25rem; font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
           <a href="#jiao2023supreyes">SUPREYES (UIST'23)</a>
           <a href="#jiao2026diffgaze">DiffGaze (TiiS'26)</a>
           <a href="#jiao2026diffeyesyn">DiffEyeSyn (FG'26)</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4 flow-pillar-col">
+    <div class="flow-pillar-col">
       <div class="flow-pillar-card">
         <div class="flow-pillar-title">2. Multimodal Coordination</div>
         <div class="flow-pillar-subtitle">How We Move &rarr;</div>
         <div class="flow-pillar-desc">Modelling cross-modal coordination between eye gaze, head orientation, wrist/hand motion, and body posture from everyday wearable sensors.</div>
         <div class="flow-pillar-links">
-          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <div style="margin-bottom: 0.25rem; font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
           <a href="#jiao2025hagi">HAGI (UIST'25)</a>
           <a href="#jiao2025hagi++">HAGI++ (TVCG'26)</a>
           <span class="tag">[Under Submission]</span>
         </div>
       </div>
     </div>
-    <div class="col-md-4 flow-pillar-col">
+    <div class="flow-pillar-col">
       <div class="flow-pillar-card">
         <div class="flow-pillar-title">3. World Models &amp; Robot Learning for HRI</div>
         <div class="flow-pillar-subtitle">What We See &amp; How We Interact</div>
         <div class="flow-pillar-desc">Moving beyond single-view perception to multi-perspective egocentric video generation and generative world models, transferring human skills into robot policies (VLA/WAM) for fluent human-robot interaction and collaboration.</div>
         <div class="flow-pillar-links">
-          <div class="mb-1" style="font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
+          <div style="margin-bottom: 0.25rem; font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
           <span class="tag">[Under Submission]</span>
         </div>
       </div>
