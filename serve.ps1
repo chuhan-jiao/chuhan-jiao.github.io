@@ -31,6 +31,7 @@ $mimeTypes = @{
     ".woff2" = "font/woff2"
     ".ttf"   = "font/ttf"
     ".pdf"   = "application/pdf"
+    ".mp4"   = "video/mp4"
     ".txt"   = "text/plain; charset=utf-8"
 }
 
