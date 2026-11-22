@@ -21,7 +21,9 @@ selected_papers: false
 social: true
 
 announcements:
-  enabled: false
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: false
@@ -160,7 +162,7 @@ latest_posts:
   <strong>I am on the job market for faculty or research scientist positions. Please feel free to reach out!</strong>
 </div>
 
-I am a final-year Ph.D. candidate in Computer Science at the [Collaborative Artificial Intelligence Group](https://www.collaborative-ai.org/), [University of Stuttgart](https://www.uni-stuttgart.de/en/), supervised by [Prof. Andreas Bulling](https://www.collaborative-ai.org/people/bulling/). Funded by the Horizon Europe MSCA Doctoral Network [Eyes4ICU](https://www.eyes4icu.eu/), my Ph.D. research focuses on computational modelling of human gaze behaviour and its multimodal coordination with head, hand, and body movements. Building on this foundation, I am now expanding my research to egocentric video generation, world models, and robot policy learning for human-robot interaction and collaboration (Physical AI).
+I am a final-year Ph.D. candidate in Computer Science at the [Collaborative Artificial Intelligence Group](https://www.collaborative-ai.org/), [University of Stuttgart](https://www.uni-stuttgart.de/en/), supervised by [Prof. Andreas Bulling](https://www.collaborative-ai.org/people/bulling/). Funded by the Horizon Europe MSCA Doctoral Network [Eyes4ICU](https://www.eyes4icu.eu/), my Ph.D. research focuses on computational modelling of human gaze behaviour and its multimodal coordination with head, hand, and body movements. Building on this foundation, I am expanding my research into egocentric computer vision, 3D vision and video generation, world models, and foundational robot policy learning.
 
 In summer 2026, I was a Research Intern at the [Toyota Research Institute (TRI)](https://www.tri.global/) in Cambridge, Massachusetts, within the Robotics / Human-Aware Interaction and Learning (HAIL) team, mentored by [Dr. John Gideon](http://www.johngideon.me/), [Dr. Anshul Gupta](https://anshul-gupta24.github.io/), and [Dr. Guy Rosman](https://www.tri.global/about-us/dr-guy-rosman), where I worked on egocentric video generation. In autumn 2024, I was a Visiting Doctoral Researcher at [ETH Zürich](https://ethz.ch/en.html) in the [GeoGaze Lab](https://geogaze.ethz.ch/), hosted by [Dr. Peter Kiefer](https://pekiefer.ethz.ch/).
 
@@ -170,12 +172,15 @@ Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science
 
 ### Research Overview
 
-My research focuses on **human behaviour modelling**, **egocentric computer vision**, and **robot learning**, with the overarching goal of transferring human behavioural priors and manipulation skills to robots for natural **human-robot interaction (HRI)** and collaboration. Moving from modelling *where* people look and *how* they coordinate their movements to generating *what* people see across multiple perspectives in shared environments, I aim to equip embodied agents with the visual and behavioural understanding needed to work alongside humans rather than solely in isolation.
+<details open>
+<summary style="cursor: pointer; font-weight: 600; margin-bottom: 0.75rem;">Show / Hide Research Overview</summary>
+
+My research spans **human behaviour modelling**, **egocentric computer vision**, **3D vision and video generation**, and **robot policy learning**. Motivated by recent advances in general vision-language models (such as FABLE 5.2, GEMINI 4, and GPT Astra), I work towards developing stronger foundational robot policies that can naturally generalise to human-robot interaction. Moving from modelling *where* people look and *how* they coordinate their movements to generating *what* people see across perspectives, I aim to leverage 3D spatial representations and human behavioural priors to advance generative world models and policy learning algorithms, as well as transferring human skills into robot policies (VLA/WAM).
 
 <div class="research-overview-card">
   <div class="flow-root-node">
-    <div style="font-weight: 700; font-size: 1.15rem; margin-bottom: 0.25rem; color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Human-Robot Interaction &amp; Physical AI</div>
-    <div style="font-size: 0.88rem; color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising multi-perspective egocentric experiences, and transferring human skills to robots for natural human-robot interaction</div>
+    <div style="font-weight: 700; font-size: 1.15rem; margin-bottom: 0.25rem; color: var(--global-theme-color, #0076df);">From Egocentric Human Behaviour Modelling to Generalisable Robot Policy Learning</div>
+    <div style="font-size: 0.88rem; color: var(--global-text-color-light, #6c757d);">Decoding multimodal human attention, synthesising 3D-grounded multi-perspective egocentric experiences, and advancing foundational policy algorithms and human-to-robot skill transfer</div>
   </div>
   <div class="flow-down-indicator"></div>
   <div class="flow-pillars-grid">
@@ -207,17 +212,19 @@ My research focuses on **human behaviour modelling**, **egocentric computer visi
     </div>
     <div class="flow-pillar-col">
       <div class="flow-pillar-card">
-        <div class="flow-pillar-title">3. World Models &amp; Robot Learning for HRI</div>
-        <div class="flow-pillar-subtitle">What We See &amp; How We Interact</div>
-        <div class="flow-pillar-desc">Moving beyond single-view perception to multi-perspective egocentric video generation and generative world models, transferring human skills into robot policies (VLA/WAM) for fluent human-robot interaction and collaboration.</div>
+        <div class="flow-pillar-title">3. World Models &amp; Robot Policy Learning</div>
+        <div class="flow-pillar-subtitle">What We See &amp; How Policies Generalise</div>
+        <div class="flow-pillar-desc">Moving beyond single-view perception to 3D-grounded egocentric video generation and generative world models, leveraging 3D spatial representations and human behavioural priors to advance foundational policy algorithms and transfer human skills into robot policies (VLA/WAM).</div>
         <div class="flow-pillar-links">
           <div style="margin-bottom: 0.25rem; font-size:0.75rem; color: var(--global-text-color-light, #6c757d);"><strong>Key Works:</strong></div>
-          <span class="tag">[Under Submission]</span>
+          <a href="#jiao2026ego2ego">Ego2Ego (arXiv'26)</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+</details>
 
 ### Selected Publications
 
@@ -227,9 +234,12 @@ My research focuses on **human behaviour modelling**, **egocentric computer visi
 
 ### Other Publications
 
+<details>
+<summary style="cursor: pointer; font-weight: 600; margin-bottom: 0.75rem;">Show / Hide Other Publications</summary>
 <div class="publications">
 {% bibliography --group_by none --query @*[selected=false]* %}
 </div>
+</details>
 
 ### Academic Services
 
