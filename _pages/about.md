@@ -21,9 +21,7 @@ selected_papers: false
 social: true
 
 announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
+  enabled: false
 
 latest_posts:
   enabled: false
@@ -225,6 +223,10 @@ Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science
 </div>
 
 </details>
+
+### News
+
+{% include news.liquid limit=true %}
 
 ### Selected Publications
 
