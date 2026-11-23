@@ -257,6 +257,9 @@ Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science
 
 Outside of research, I enjoy playing basketball and pool (billiards), and I have a deep appreciation and knowledge of pool cues. Earlier on, I was an avid Go player and reached 9 Dan on Fox Go. After modern Go AI changed the nature of the game, I found it less exciting and play much less nowadays.
 
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;" aria-hidden="true">
-  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CH50b2zD34he7GA9zmSxWL0yi8j4sVjfFqdb_7J3HJE&cl=ffffff&w=a"></script>
-</div>
+<details style="position: fixed; right: 16px; bottom: 16px; z-index: 1030; background: var(--global-card-bg-color, #ffffff); border: 1px solid var(--global-divider-color, #e1e4e8); border-radius: 8px; padding: 4px 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); font-size: 0.78rem;">
+  <summary style="cursor: pointer; color: var(--global-text-color-light, #6c757d); user-select: none;">Visitor Map</summary>
+  <div style="margin-top: 8px; width: 260px;">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CH50b2zD34he7GA9zmSxWL0yi8j4sVjfFqdb_7J3HJE&cl=ffffff&w=a"></script>
+  </div>
+</details>
