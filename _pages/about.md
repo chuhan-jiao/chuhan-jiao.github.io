@@ -256,3 +256,7 @@ Prior to my Ph.D., I received my M.Sc. degree (with Honours) in Computer Science
 ### Beyond Research
 
 Outside of research, I enjoy playing basketball and pool (billiards), and I have a deep appreciation and knowledge of pool cues. Earlier on, I was an avid Go player and reached 9 Dan on Fox Go. After modern Go AI changed the nature of the game, I found it less exciting and play much less nowadays.
+
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;" aria-hidden="true">
+  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CH50b2zD34he7GA9zmSxWL0yi8j4sVjfFqdb_7J3HJE&cl=ffffff&w=a"></script>
+</div>
